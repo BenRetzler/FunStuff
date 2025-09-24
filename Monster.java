@@ -2,18 +2,22 @@ import java.util.Random;
 
 public class Monster
 {
-  private int health, playerLevel;
-  private Weapon monsterAttack;
+  private int health, level;
+  private Weapon attack;
+  private Random random;
+
   public Monster()
   {
     health = 100;
-    playerLevel = 0;
-    monsterAttack = new Weapon();
+    level = 0;
+    random = new Random();
+    attack = new Weapon();
   }
   public Monster(int h, int lvl)
   {
     heatlh = h;
-    playerLevel = lvl;
-    monsterAttack = new Weapon("", 
+    level = lvl;
+    random = new Random();
+    attack = new Weapon("",random.nextInt(2*(0.2*level))+1,
   }
 }
