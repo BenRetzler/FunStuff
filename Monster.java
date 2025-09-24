@@ -18,6 +18,6 @@ public class Monster
     heatlh = h;
     level = lvl;
     random = new Random();
-    attack = new Weapon("",random.nextInt(2*(0.2*level))+1,
+    attack = new Weapon("",random.nextInt(2*(0.2*level))+1,random.nextInt(2*(0.1*level))+1
   }
 }
